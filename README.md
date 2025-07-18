@@ -97,11 +97,9 @@ cd Signify-main
 ---
 
 ## Credits
-- ASL images and references: [Your sources here]
+- ASL images and references
 - Built with Flask, MediaPipe, and scikit-learn
 - UI inspired by modern accessibility and design best practices
 
 ---
-
-## License
-[MIT License or your preferred license] 
+ 
