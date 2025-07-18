@@ -1,0 +1,186 @@
+/* Professional color palette */
+:root {
+  --primary: #2563eb; /* Deep blue */
+  --accent: #f97316;  /* Vibrant orange */
+  --background: #f8fafc; /* Clean white */
+  --surface: #ffffff;
+  --text-main: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 4px 24px rgba(30, 41, 59, 0.08);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.header, header {
+  background: #374151; /* Professional dark grey */
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  background: linear-gradient(120deg, var(--primary) 60%, var(--accent) 100%);
+  color: #fff;
+  padding: 4rem 0 3rem 0;
+  position: relative;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30,41,59,0.15);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  color: #f1f5f9;
+  margin-bottom: 2rem;
+}
+.buttons .btn {
+  padding: 0.8rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  margin: 0 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: var(--shadow);
+}
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn.primary:hover {
+  background: #ea580c;
+}
+.btn.secondary {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn.secondary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Utility classes for spacing and layout */
+.container, main.container {
+  background: var(--surface);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2rem;
+  margin: 2.5rem auto;
+  max-width: 900px;
+}
+
+/* Results and controls */
+.results h2 {
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+#output, #sentence {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+.controls button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.reset-btn {
+  background: #ef4444;
+  color: #fff;
+}
+.reset-btn:hover {
+  background: #b91c1c;
+}
+.backspace-btn {
+  background: var(--primary);
+  color: #fff;
+}
+.backspace-btn:hover {
+  background: #1e40af;
+}
+.speak-btn {
+  background: var(--accent);
+  color: #fff;
+}
+.speak-btn:hover {
+  background: #ea580c;
+}
+
+/* Slider styling */
+.slider-box input[type="range"] {
+  accent-color: var(--primary);
+}
+.slider-box span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container, main.container {
+    padding: 1.2rem 0.5rem;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .buttons .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+} 
